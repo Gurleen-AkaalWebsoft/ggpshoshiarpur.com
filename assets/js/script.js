@@ -337,5 +337,38 @@
 				.filter(toggleTarget)
 				.addClass("zirox-services-details__left-tab-content--active");
 		}
+		
 	);
+	   $('.counter-content').waypoint(
+            function () {
+                var odo = $(".counter-content .odometer");
+                odo.each(function () {
+                    var countNumber = $(this).attr("data-count");
+                    $(this).html(countNumber);
+                });
+            }, {
+                offset: "80%",
+                triggerOnce: true
+            }
+        );
+})(jQuery);
+(function ($) {
+	"use strict";
+
+	// ...[rest of your existing code]
+
+	// Counter Up + Waypoint Trigger (clean version)
+	if ($('.counter-content').length) {
+		$('.counter-content').waypoint(function () {
+			var odo = $(this.element).find(".odometer");
+			odo.each(function () {
+				var countNumber = $(this).attr("data-count");
+				$(this).html(countNumber);
+			});
+		}, {
+			offset: "80%",
+			triggerOnce: true
+		});
+	}
+
 })(jQuery);
