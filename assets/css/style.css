@@ -979,7 +979,7 @@ margin-top: 30px !important;
 	Sticky Header
 ------------------------------------*/
 .sticky-top {
-  animation: slideDown 0.35s ease-out;
+  animation: slideDown 1s ease-out;
 }
 
 /*------------------------------------
@@ -1063,7 +1063,7 @@ margin-top: 30px !important;
 	Top Bar
 --------------------*/
 .zirox-header__top-bar {
-  background-color: #FAF7F7;
+    background-color: #ddfeff;
 }
 .zirox-header__top-bar .container-fluid {
   width: 95%;
@@ -8364,6 +8364,9 @@ margin-top: 30px !important;
     -ms-flex-direction: column;
         flex-direction: column;
   }
+  .zirox-header__top-bar__logo{
+      width: 300px !important;
+}
 }
 @media (max-width: 767px) {
   .zirox-latest-projects__header {
@@ -9273,4 +9276,30 @@ color: var(--sea-green);
     justify-content: center;
     align-items: center;
   } */
+}
+.sticky-header {
+  transition: all 1s ease;
+  z-index: 1000;
+      position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  animation: slideInDown 1s ease-in-out;
+}
+.zirox-header__navbar{
+  box-shadow: 0 8px 20px rgb(0 0 0 / 22%);;
+
+}
+
+/* Animate.css fallback */
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

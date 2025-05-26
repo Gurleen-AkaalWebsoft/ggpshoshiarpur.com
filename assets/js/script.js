@@ -18,14 +18,14 @@
 	});
 
 	// Sticky Header.
-	if ($(".zirox-header-3").length) {
+	if ($(".zirox-header").length) {
 		$(window).scroll(function () {
 			if ($(window).scrollTop() >= 150) {
-				$(".zirox-header-3")
+				$(".zirox-header")
 					.removeClass("sticky-top")
 					.addClass("sticky-top");
 			} else {
-				$(".zirox-header-3").removeClass("sticky-top");
+				$(".zirox-header").removeClass("sticky-top");
 			}
 		});
 	}
@@ -357,7 +357,7 @@
 
 	// ...[rest of your existing code]
 
-	// Counter Up + Waypoint Trigger (clean version)
+
 	if ($('.counter-content').length) {
 		$('.counter-content').waypoint(function () {
 			var odo = $(this.element).find(".odometer");
@@ -372,3 +372,4 @@
 	}
 
 })(jQuery);
+
