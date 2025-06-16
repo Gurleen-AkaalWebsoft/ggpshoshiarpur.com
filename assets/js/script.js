@@ -373,3 +373,35 @@
 
 })(jQuery);
 
+document.querySelectorAll('.gallery-image').forEach(img => {
+    img.addEventListener('click', function () {
+      const modalImage = document.getElementById('modalImage');
+      modalImage.src = this.src;
+
+      const modal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      modal.show();
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop(); // Get current page (e.g. about.html)
+
+    // Select all nav links
+    const navLinks = document.querySelectorAll("nav.ud-main-menu a, .zirox-side-popup a");
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute("href");
+
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+
+        // Check if it's in a submenu and also activate parent <li>
+        const parentLi = link.closest("ul")?.closest("li");
+        if (parentLi) {
+          const parentLink = parentLi.querySelector("a");
+          if (parentLink) parentLink.classList.add("active");
+        }
+      }
+    });
+  });
+

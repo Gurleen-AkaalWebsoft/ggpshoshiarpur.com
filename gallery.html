@@ -133,10 +133,11 @@
 												<ul class="ud-main-menu__sub-menu">
 													<li><a href="about.html">About US</a></li>
 													<li><a href="team.html">Our Team</a></li>
-													<li><a href="disclosure.html">MPD</a></li>
+													
 													<li><a href="history.html">History</a></li>
 													<li><a href="president-message.html">President's Message</a></li>
 													<li><a href="principal-message.html">Principal's Message</a></li>
+													<li><a href="Secretary's Desk.html">Secretary's Message</a></li>
 													<li><a href="awards.html">Our Awards</a></li>
 												</ul>
 											</li>
@@ -151,6 +152,7 @@
 												<a href="#">CBSE Corner <i class="flaticon-plus-2"></i></a>
 												<ul class="ud-main-menu__sub-menu">
 													<li><a href="governingteam.html">Governing team</a></li>
+													<li><a href="disclosure.html">MPD</a></li>
 													<li><a href="faculty-details.html">Faculty Details</a></li>
 												</ul>
 											</li>
@@ -217,6 +219,7 @@
 													<li><a href="history.html">History</a></li>
 													<li><a href="president-message.html">President's Message</a></li>
 													<li><a href="principal-message.html">Principal's Message</a></li>
+													<li><a href="Secretary's Desk.html">Secretary's Message</a></li>
 													<li><a href="awards.html">Our Awards</a></li>
 												
 							</ul>
@@ -421,39 +424,42 @@
 				<h2 class="text-center wow fadeInUp">Our Activities</h2>
 				<div class="row flex-wrap align-items-center justify-content-center">
 				<div class="col-12">
-                    <div class="pins-container">
-                       
-                        <div class="pin">
-                          <img src="assets/img/gallery/2.jpg">
-                        </div>
-                       
-                        <div class="pin">
-                          <img src="assets/img/gallery/1.jpg" />
-                        </div>
-                        <div class="pin">
-                          <img src="assets/img/gallery/3.jpg" />
-                        </div>
-                      
-                        <div class="pin">
-                          <img src="assets/img/gallery/6.jpg" />
-                        </div>
-                      
-                        <div class="pin">
-                            <img src="assets/img/gallery/4.jpg">
-                          </div>
-                         
-                          <div class="pin">
-                            <img src="assets/img/gallery/5.jpg" />
-                          </div>
-                          <!-- <div class="pin">
-                            <img src="assets/img/artcraft/artcraft3.jpg" />
-                          </div>
-                        
-                          <div class="pin">
-                            <img src="assets/img/artcraft/artcraft4.jpg" />
-                          </div> -->
-                        
-                      </div>
+                   <div class="pins-container">
+  <!-- Image Pins -->
+  <div class="pin">
+    <img src="assets/img/gallery/2.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+  <div class="pin">
+    <img src="assets/img/gallery/1.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+  <div class="pin">
+    <img src="assets/img/gallery/3.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+  <div class="pin">
+    <img src="assets/img/gallery/6.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+  <div class="pin">
+    <img src="assets/img/gallery/4.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+  <div class="pin">
+    <img src="assets/img/gallery/5.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
+  </div>
+</div>
+
+<!-- Modal Structure -->
+<div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+      </div>
+    </div>
+  </div>
+</div>
+
                 </div>
 				</div>
                
@@ -613,6 +619,7 @@
 			</div>
 		</footer>
 		<!-- Footer End -->
+
 
 
 		<!-- jQuery -->

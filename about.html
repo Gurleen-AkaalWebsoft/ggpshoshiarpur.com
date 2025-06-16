@@ -134,10 +134,11 @@
 												<ul class="ud-main-menu__sub-menu">
 													<li><a href="about.html">About US</a></li>
 													<li><a href="team.html">Our Team</a></li>
-													<li><a href="disclosure.html">MPD</a></li>
+													
 													<li><a href="history.html">History</a></li>
 													<li><a href="president-message.html">President's Message</a></li>
 													<li><a href="principal-message.html">Principal's Message</a></li>
+													<li><a href="Secretary's Desk.html">Secretary's Message</a></li>
 													<li><a href="awards.html">Our Awards</a></li>
 												</ul>
 											</li>
@@ -152,6 +153,7 @@
 												<a href="#">CBSE Corner <i class="flaticon-plus-2"></i></a>
 												<ul class="ud-main-menu__sub-menu">
 													<li><a href="governingteam.html">Governing team</a></li>
+													<li><a href="disclosure.html">MPD</a></li>
 													<li><a href="faculty-details.html">Faculty Details</a></li>
 												</ul>
 											</li>
@@ -218,6 +220,7 @@
 													<li><a href="history.html">History</a></li>
 													<li><a href="president-message.html">President's Message</a></li>
 													<li><a href="principal-message.html">Principal's Message</a></li>
+													<li><a href="Secretary's Desk.html">Secretary's Message</a></li>
 													<li><a href="awards.html">Our Awards</a></li>
 												
 							</ul>
@@ -484,7 +487,7 @@ Our legacy at a glance!</h6>
                                 </div>
                         <div class="counter-content">
                             <h3><span class="odometer" data-count="80">00</span>+</h3>
-                            <h4>Expert Techers</h4>
+                            <h4>Expert Teachers</h4>
                         </div>
                     </div>
                 </div>
@@ -593,61 +596,74 @@ Our legacy at a glance!</h6>
 			  </h2>
 			<div class="row flex-wrap align-items-center justify-content-center">
 				<div class="col-12 col-md-6">
-					<a href="#">
+					
 						<div class="zirox-projects-item wow fadeInLeft" data-wow-duration="1s">
-							<img src="assets/img/sports/sports2.jpg" alt="Project 1">
+							<img src="assets/img/gallery/1.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
 							<div class="zirox-projects-item__detail">
 								<h3>Latest Happenings at Our School</h3>
 								<p>A Glimpse into the Exciting Events, Achievements, and Activities That Are Shaping Our School Community</p>
 							</div>
 						</div>
-					</a>
+					
 				</div>
 				<div class="col-12 col-md-6">
-					<a href="#">
+					
 						<div class="zirox-projects-item wow fadeInRight" data-wow-duration="1s">
-							<img src="assets/img/labs/Lab4.webp" alt="Project 2">
+							<img src="assets/img/gallery/2.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
 							<div class="zirox-projects-item__detail">
 								<h3>Latest Happenings at Our School</h3>
 								<p>A Glimpse into the Exciting Events, Achievements, and Activities That Are Shaping Our School Community</p>
 							</div>
 						</div>
-					</a>
+					
 				</div>
 				<div class="col-12 col-md-4 lg-3">
-					<a href="#">
+					
 						<div class="zirox-projects-item wow fadeInUp" data-wow-duration="1s">
-							<img src="assets/img/artcraft/artcraft3.jpg" alt="Project 3">
+							<img src="assets/img/gallery/3.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
 							<div class="zirox-projects-item__detail">
 								<h3>Latest Happenings at Our School</h3>
 								<p>A Glimpse into the Exciting Events, Achievements, and Activities That Are Shaping Our School Community</p>
 							</div>
 						</div>
-					</a>
+					
 				</div>
 				<div class="col-12 col-md-4 lg-3">
-					<a href="#">
+					
 						<div class="zirox-projects-item wow fadeInUp" data-wow-duration="1.3s">
-							<img src="assets/img/music&sound/Music&Sound4.jpg" alt="Project 4">
+							<img src="assets/img/gallery/4.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
 							<div class="zirox-projects-item__detail">
 								<h3>Latest Happenings at Our School</h3>
 								<p>A Glimpse into the Exciting Events, Achievements, and Activities That Are Shaping Our School Community</p>
 							</div>
 						</div>
-					</a>
+				
 				</div>
 				<div class="col-12 col-md-4 lg-3">
-					<a href="#">
+					
 						<div class="zirox-projects-item wow fadeInUp" data-wow-duration="1.7s">
-							<img src="assets/img/smartclass/smartclass3.jpg" alt="Project 5">
+							<img src="assets/img/gallery/5.jpg" class="gallery-image" style="cursor: pointer;" alt="Gallery Image">
 							<div class="zirox-projects-item__detail">
 								<h3>Latest Happenings at Our School</h3>
 								<p>A Glimpse into the Exciting Events, Achievements, and Activities That Are Shaping Our School Community</p>
 							</div>
 						</div>
-					</a>
+					
 				</div>
 			</div>
+			<div class="modal fade modal-xl" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+		<h3>Latest Happenings at Our School</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" class="img-fluid" alt="Modal Image">
+      </div>
+    </div>
+  </div>
+</div>
 		</div>
 	</section>
 	<!-- Team Section -->
@@ -658,32 +674,11 @@ Our legacy at a glance!</h6>
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4">
 					<div class="zirox-team-item wow fadeInUp" data-wow-duration="1.s">
-						<img src="assets/img/team/president.jpg" alt="Member-1">
+						<img src="assets/img/team/president.jpg" alt="Member-1" >
 						<div class="zirox-team-item__info">
 							<h3 class="text-white text-center">S. Tarsem Singh Ji</h3>
 							<p class="mb-3 text-center">President, GGSES</p>
-							<ul class="zirox-team-item__info__socials">
-								<li>
-									<a href="#">
-										<i class="flaticon-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-facebook-logo-in-circular-shape"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-pinterest"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-instagram"></i>
-									</a>
-								</li>
-							</ul>
+							
 						</div>
 					</div>
 				</div>
@@ -693,28 +688,7 @@ Our legacy at a glance!</h6>
 						<div class="zirox-team-item__info">
 							<h3 class="text-white text-center">S. Surinder Singh Ji</h3>
 							<p class="mb-3 text-center">Secretary, GGSES</p>
-							<ul class="zirox-team-item__info__socials">
-								<li>
-									<a href="#">
-										<i class="flaticon-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-facebook-logo-in-circular-shape"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-pinterest"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-instagram"></i>
-									</a>
-								</li>
-							</ul>
+							
 						</div>
 					</div>
 				</div>
@@ -724,28 +698,7 @@ Our legacy at a glance!</h6>
 						<div class="zirox-team-item__info">
 							<h3 class="text-white text-center">S. Harjit Singh Ji</h3>
 							<p class="mb-3 text-center">Principal, GGPS Hoshiarpur</p>
-							<ul class="zirox-team-item__info__socials">
-								<li>
-									<a href="#">
-										<i class="flaticon-twitter"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-facebook-logo-in-circular-shape"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-pinterest"></i>
-									</a>
-								</li>
-								<li>
-									<a href="#">
-										<i class="flaticon-instagram"></i>
-									</a>
-								</li>
-							</ul>
+							
 						</div>
 					</div>
 				</div>
